@@ -1,0 +1,17 @@
+# Java compiled files
+*.class
+
+# Output and log files
+output.txt
+*.log
+
+# OS files
+.DS_Store
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# Temporary input/output (optional)
+*.tmp
