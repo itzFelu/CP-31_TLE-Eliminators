@@ -38,11 +38,37 @@ public class Main {
         int t = nextInt();
         for(int i=0; i<t; i++){
             int n = nextInt();
-            
+            int[] arr = new int[n];
+            for(int j = 0 ; j<n ; j++){
+                arr[j] = nextInt();
+            }
+            HashSet<Integer> hSet = new HashSet<>();
+            for(int j=0; j<n; j++){
+                int currOr = 0;
+                for(int k=j; k<n; k++){
+                    currOr |= arr[k];
+                    hSet.add(currOr);
+                }
+            }
+            out.println(hSet.size());
             
         }
         // ------------------------------
 
         out.flush();
+    }
+    
+    public List<List<Integer>> getSubArrays(int[] arr) {
+        // code here
+        List<List<Integer>> answer = new ArrayList<>();
+        for(int i = 0; i < arr.length; i++){
+            List<Integer> subarray = new ArrayList<>();
+            for(int j = i; j<arr.length; j++){
+                subarray.add(arr[j]);
+                answer.add(new ArrayList<>(subarray));
+            }
+        }
+        
+        return answer;
     }
 }

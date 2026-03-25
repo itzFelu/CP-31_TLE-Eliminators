@@ -36,7 +36,7 @@ public class Main {
         // ------------------------------
         // Start coding here
         int t = nextInt();
-        for(int i=0; i<t; i++){
+        for(int z=0; z<t; z++){
             int n = nextInt();
             
             
