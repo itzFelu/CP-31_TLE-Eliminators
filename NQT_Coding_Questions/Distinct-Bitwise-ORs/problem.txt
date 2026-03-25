@@ -1,0 +1,38 @@
+🧩 Problem: Distinct Bitwise ORs of Subarrays
+
+You are given an integer array arr of length n.
+
+For every non-empty contiguous subarray, compute the bitwise OR of its elements.
+
+Your task is to determine how many distinct values can be obtained from all such subarrays.
+
+🔹 Input Format
+The first line contains a single integer t — the number of test cases.
+For each test case:
+The first line contains an integer n — the size of the array.
+The second line contains n integers arr[i].
+🔹 Output Format
+
+For each test case, print a single integer — the number of distinct bitwise OR values of all non-empty subarrays.
+
+🔹 Constraints
+1 ≤ t ≤ 10^4
+1 ≤ n ≤ 10^5
+0 ≤ arr[i] ≤ 10^9
+Sum of all n over test cases ≤ 2 * 10^5
+🔸 Sample Input
+3
+1
+0
+3
+1 1 2
+4
+1 2 4 8
+🔸 Sample Output
+1
+3
+10
+🔸 Explanation
+Test case 1: Only subarray is [0] → OR = 0
+Test case 2: Subarrays give ORs: {1, 2, 3} → 3 distinct values
+Test case 3: Increasing powers of 2 generate many combinations
